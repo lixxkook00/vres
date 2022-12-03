@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- FONT HEHE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <a href="/" class="header-logo hidden-m-t">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+
+                <div class="header-nav-icon centering hide-on-pc" onclick="toggleNavMobile()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="header-search">
+                    <input type="text" placeholder="Iphone 14 Pro Max...">
+                    <div class="header-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="header-infor d-flex align-items-center">
+                    <div class="language hidden-m-t">
+                        English
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <a href="./cart.html" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <div class="cart mr-0">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div class="wallet hidden-m-t">
+                        <i class="fa-solid fa-wallet"></i>
+                        $ 1,680,000.00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav hidden-m-t">
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-nav-item header-nav-item-categories active">
+                        <i class="fa-solid fa-bars"></i>Categories
+
+                        <ul class="side-bar__list hidden-m-t">
+                            <li class="side-bar__item ">
+                                <a href="">
+                                    Clothing
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <!-- Side Bar Soft -->
+                                <div class="side-bar__soft--animation side-bar__soft ">
+                                    <ul class="side-bar__soft-list">
+                                        <li class="side-bar__soft-item">
+                                            Spinach
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Celery
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Dry fruits
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Dresses
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Tops
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Shirts & Blouses
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Pants
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Cardigans & Sweaters
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Jackets & Coats
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Blazers & Vests
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Jeans
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Overalls & Jumpsuits
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="side-bar__item ">
+                                <a href="">
+                                    Phone
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <!-- Side Bar Soft -->
+                                <div class="side-bar__soft--animation side-bar__soft ">
+                                    <ul class="side-bar__soft-list">
+                                        <li class="side-bar__soft-item">
+                                            Apple
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Samsung
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Huawei
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Nokia
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Sony
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            LG
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            HTC
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Motorola
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Collection</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Electronics</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Sports & Outdoor</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Jewelry & Watches</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Tools, Industrial</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Automobiles & Motorcycles</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Health,Beauty & Hair</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Computers & Office</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="" class="">
+                                    Accessories
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <!-- Side Bar Soft -->
+                                <div class="side-bar__soft--animation side-bar__soft ">
+                                    <ul class="side-bar__soft-list">
+                                        <li class="side-bar__soft-item">
+                                            Cucumber
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Cherry tomatoes
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Broccoli
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Artichoke
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Kohlrabi
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Celery
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="./flash-sale.html" class="header-nav-item">
+                        <i class="fa-solid fa-money-bill-wheat"></i>Flash Sale
+                    </a>
+
+                    <a href="./deposit.html" class="header-nav-item">
+                        <i class="fa-solid fa-money-bill-wheat"></i>Deposit
+                    </a>
+
+                    <a href="./transaction.html" class="header-nav-item">
+                        <i class="fa-solid fa-money-bill-transfer"></i>Transaction
+                    </a>
+
+                    <a href="./withdraw.html" class="header-nav-item">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>With draw
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION MOBILE-->
+    <nav class="navigation-tab hide-on-pc hidden-low-pc">
+        <a href="/" class="navigation-tab-item active">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-house"></i>
+            </span>
+        </a>
+        <a href="./navigate-wallet.html" class="navigation-tab-item">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-wallet"></i>
+            </span>
+        </a>
+        <a href="./navigate-profile.html" class="navigation-tab-item">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-user"></i>
+            </span>
+        </a>
+        <a href="" class="navigation-tab-item">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-heart"></i>
+            </span>
+        </a>
+        <a href="./transaction.html" class="navigation-tab-item">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </span>
+        </a>
+    </nav>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu-list soft-menu__list">
+            <li class="side-bar__item ">
+                <a href="">
+                    Clothing
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </li>
+
+            <li class="side-bar__item ">
+                <a href="">
+                    Phone
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Collection</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Electronics</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Sports & Outdoor</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Jewelry & Watches</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Tools, Industrial</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Automobiles & Motorcycles</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Health,Beauty & Hair</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="">Computers & Office</a>
+            </li>
+
+            <li class="side-bar__item">
+                <a href="" class="">
+                    Accessories
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="second-content">
+
+        <div class="detail container">
+            <div class="row">
+                <!-- MAIN IMAGES -->
+                <div class="col-lg-6">
+                    <div class="swiper detail-main">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide centering">
+                                <img class="detail-img-main"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-blue-650x650-1.png"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide centering">
+                                <img class="detail-img-main"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-1tb-xanh-duong-1-650x650-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide centering">
+                                <img class="detail-img-main"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-1tb-xanh-duong-2-650x650-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide centering">
+                                <img class="detail-img-main"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-1tb-xanh-duong-3-650x650-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide centering">
+                                <img class="detail-img-main"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-5-2-650x650-1.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper detail-list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="detail-img-item"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-blue-650x650-1.png"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="detail-img-item"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-1tb-xanh-duong-1-650x650-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="detail-img-item"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-1tb-xanh-duong-2-650x650-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="detail-img-item"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-1tb-xanh-duong-3-650x650-1.jpg"
+                                    alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="detail-img-item"
+                                    src="https://shopdunk.com/wp-content/uploads/2022/09/iphone-13-pro-max-5-2-650x650-1.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DETAIL INFOR -->
+                <div class="col-lg-6">
+                    <div class="detail-infor">
+                        <div class="detail-name">
+                            iPhone 13 Pro Max 128GB - Sierra Blue - Authentic Apple
+                        </div>
+
+                        <div class="detail-feedback">
+                            <div class="detail-star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="detail-review">
+                                0 Reviews
+                            </div>
+                            <div class="detail-review">
+                                Write A Review
+                            </div>
+                        </div>
+
+                        <div class="detail-title">
+                            Brand: Apple
+                        </div>
+
+                        <div class="detail-retail">
+                            $1,200.00
+                        </div>
+
+                        <div class="detail-sale">
+                            $1,050.00
+                        </div>
+
+                        <div class="detail-title mt-3">
+                            Color: <div id="color-text" class="color" style="color: #2276BF;">Blue</div>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4">
+                            <div data-color-code="2F6010" data-color="Green" class="color-item"
+                                style="background-color: #2F6010">
+                            </div>
+
+                            <div data-color-code="2276BF" data-color="Blue" class="color-item active"
+                                style="background-color: #2276BF">
+                            </div>
+
+                            <div data-color-code="5E5E59" data-color="Brown" class="color-item"
+                                style="background-color: #5E5E59">
+                            </div>
+
+                            <div data-color-code="E3E5E3" data-color="Silver" class="color-item"
+                                style="background-color: #E3E5E3">
+                            </div>
+
+                            <div data-color-code="FCEBD3" data-color="Light Pink" class="color-item"
+                                style="background-color: #FCEBD3">
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <a href="./checkout.html" class="detail-button buy-button justify-content-center">
+                                BUY NOW
+                            </a>
+
+                            <a href="./cart.html" class="detail-button buy-add-cart justify-content-center">
+                                ADD TO CART
+                            </a>
+                        </div>
+
+                        <div class="detail-action d-flex">
+                            <div class="detail-action-item">
+                                <i class="fa-regular fa-heart"></i> Favorite
+                            </div>
+
+                            <div class="detail-action-item">
+                                <i class="fa-solid fa-headphones"></i> Contact us
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DETAIL INFOR DESC -->
+                <div class="col-12 mt-4 ">
+                    <div class="primary-block">
+                        <div class="detail-primary-title d-flex align-items-center">
+                            <i class="fa-solid fa-circle-info"></i> Product Information
+                        </div>
+
+                        <div class="detail-infor-title">
+                            Chip
+                        </div>
+
+                        <div class="detail-paragraph">
+                            A15 Bionic chip
+                            <br>
+                            New 6‑core CPU with 2 performance and 4 efficiency cores
+                            <br>
+                            New 5‑core GPU
+                            <br>
+                            New 16‑core Neural Engine
+                        </div>
+
+                        <div class="detail-infor-title">
+                            Camera
+                        </div>
+
+                        <div class="detail-paragraph">
+                            Camera system: Telephoto, Wide, and Ultra Wide cameras
+                            <br>
+                            Telephoto: ƒ/2.8 aperture
+                            <br>
+                            Wide: ƒ/1.5 aperture
+                            <br>
+                            Ultra Wide: ƒ/1.8 aperture and 120° field of view
+                            <br>
+                            3x optical zoom in, 2x optical zoom out; 6x optical zoom range
+                            <br>
+                            Digital zoom up to 15x
+                            <br>
+                            Night mode portraits enabled by LiDAR Scanner
+                            <br>
+                            Portrait mode with advanced bokeh and Depth Control
+                            <br>
+                            Portrait Lighting with six effects (Natural, Studio, Contour, Stage, Stage Mono, High‑Key
+                            Mono)
+                            <br>
+                            Dual optical image stabilization (Telephoto and Wide)
+                            <br>
+                            Sensor‑shift optical image stabilization (Wide)
+                            <br>
+                            Six‑element lens (Telephoto and Ultra Wide); seven‑element lens (Wide)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-2 ">
+                    <div class="primary-block">
+
+                        <div class="detail-infor-title">
+                            Reviews (0)
+                        </div>
+
+                        <input type="text" class="detail-input">
+
+                        <div class="detail-infor-title">
+                            Write a review
+                        </div>
+
+                        <div class="detail-star detail-review-star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="detail-infor-title">
+                            Your Name
+                        </div>
+
+                        <input type="text" class="detail-input">
+
+                        <div class="detail-infor-title">
+                            Your Review
+                        </div>
+
+                        <input type="text" class="detail-input" style="min-height: 80px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SELLING POINT -->
+    <div class="selling-point">
+        <div class="container">
+            <div class="selling-point-wrapper d-flex align-items-start justify-content-between">
+                <div class="selling-point-item">
+                    <div class="centering h-120">
+                        <img class="selling-point-icon" src="./assets/img/selling-point-1.png" alt="">
+                    </div>
+                    <div class="selling-point-title">
+                        Quality and Saving
+                    </div>
+                    <div class="selling-point-desc">
+                        Comprehensive quality
+                        <br>
+                        control and affordable prices
+                    </div>
+                </div>
+
+                <div class="selling-point-item">
+                    <div class="centering h-120">
+                        <img class="selling-point-icon" src="./assets/img/selling-point-2.png" alt="">
+                    </div>
+                    <div class="selling-point-title">
+                        Global Warehouse
+                    </div>
+                    <div class="selling-point-desc">
+                        37 overseas warehouses
+                    </div>
+                </div>
+
+                <div class="selling-point-item">
+                    <div class="centering h-120">
+                        <img class="selling-point-icon" src="./assets/img/selling-point-3.png" alt="">
+                    </div>
+                    <div class="selling-point-title">
+                        Fast and convenient logistics
+                    </div>
+                    <div class="selling-point-desc">
+                        Fast and convenient door to
+                        <br>
+                        door delivery
+                    </div>
+                </div>
+
+                <div class="selling-point-item">
+                    <div class="centering h-120">
+                        <img class="selling-point-icon" src="./assets/img/selling-point-4.png" alt="">
+                    </div>
+                    <div class="selling-point-title">
+                        Payment Security
+                    </div>
+                    <div class="selling-point-desc">
+                        More than 40 different
+                        <br>
+                        secure payment methods
+                    </div>
+                </div>
+
+                <div class="selling-point-item">
+                    <div class="centering h-120">
+                        <img class="selling-point-icon" src="./assets/img/selling-point-5.png" alt="">
+                    </div>
+                    <div class="selling-point-title">
+                        Professional service
+                    </div>
+                    <div class="selling-point-desc">
+                        24/7 Customer Service
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-box">
+                        <div class="footer-title">
+                            Get to Know Us
+                        </div>
+                        <ul>
+                            <li>
+                                About ITGtshop.com
+                            </li>
+                            <li>
+                                Contact Us
+                            </li>
+                            <li>
+                                Help Center
+                            </li>
+                            <li>
+                                Site Map
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-box">
+                        <div class="footer-title">
+                            Subscribe
+                        </div>
+                        <ul>
+                            <li>
+                                By subscribing you agree to receive email from us.
+                                Please read our Privacy Policy
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="footer-box">
+                        <div class="footer-title">
+                            Payment & Shipping
+                        </div>
+                        <ul>
+                            <li>
+                                Payment Methods
+                            </li>
+                            <li>
+                                BGpay Instruction
+                            </li>
+                            <li>
+                                Shipping Guide
+                            </li>
+                            <li>
+                                Estimated Delivery Time
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-box">
+                        <div class="footer-title">
+                            Partnership Programs
+                        </div>
+                        <ul>
+                            <li>
+                                Drop shipping
+                            </li>
+
+                            <li>
+                                Review Club
+                            </li>
+
+                            <li>
+                                Affiliate Program
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="footer-box">
+                        <div class="footer-title">
+                            Download App
+                        </div>
+                        <div class="app-list d-flex align-items-center">
+                            <div class="app-icon centering">
+                                <i class="fa-brands fa-apple"></i>
+                            </div>
+
+                            <div class="app-icon centering">
+                                <i class="fa-brands fa-android"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-box">
+                        <div class="footer-title">
+                            Follow Us
+                        </div>
+                        <div class="social d-flex align-items-center">
+                            <div class="social-item">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="social-item">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="social-item">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="social-item">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            © 2022 ITG
+                            TERMS PRIVACY SPECIALIZED AFFAIRS
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="./assets/js/clipboard.min.js"></script>
+<script src="./assets/css/bootstrap-5/js/bootstrap.min.js"></script>
+<script src="./assets/css/bootstrap-5/js/bootstrap.bundle.js"></script>
+<script src="./assets/css/bootstrap-5/js/poper.min.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script>
+    // swiperProductPopular
+    var swiper = new Swiper(".detail-list", {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            // when window width is >= 120px
+            120: {
+                slidesPerView: 5,
+                spaceBetween: 2
+            },
+            // when window width is >= 640px
+            740: {
+                slidesPerView: 5,
+                spaceBetween: 6
+            },
+            1023: {
+                slidesPerView: 5,
+                spaceBetween: 12
+            }
+        },
+    });
+
+    var swiper2 = new Swiper(".detail-main", {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        breakpoints: {
+            // when window width is >= 120px
+            120: {
+                slidesPerView: 1,
+                spaceBetween: 2
+            },
+            // when window width is >= 640px
+            740: {
+                slidesPerView: 1,
+                spaceBetween: 6
+            },
+            1023: {
+                slidesPerView: 1,
+                spaceBetween: 6
+            }
+        },
+    });
+
+    // handle active img
+    document.querySelectorAll('.detail-list .swiper-slide').forEach((element) => {
+        element.onclick = () => {
+            console.log(element.dataset.swiperSlideIndex);
+            swiper2.slideTo(parseInt(element.dataset.swiperSlideIndex) + 1)
+        }
+    })
+
+    // handle pick color
+    $$('.color-item').forEach((element) => {
+        element.onclick = () => {
+            $$('.color-item').forEach((element) => {
+                element.classList.remove('active')
+            })
+            element.classList.add('active')
+
+            $('#color-text').innerText = element.dataset.color
+            $('#color-text').style.color = `#${element.dataset.colorCode}`
+        }
+    })
+
+</script>

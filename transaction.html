@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/fontawesome-6.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- BTLOL -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- FONT HEHE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header hidden-m-t">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <a href="/" class="header-logo hidden-m-t">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+
+                <div class="header-nav-icon centering" onclick="toggleNavMobile()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="header-search">
+                    <input type="text" placeholder="Iphone 14 Pro Max...">
+                    <div class="header-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div class="header-infor d-flex align-items-center">
+                    <div class="language hidden-m-t">
+                        English
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <a href="./cart.html" class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                    <div class="cart mr-0">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div class="wallet hidden-m-t">
+                        <i class="fa-solid fa-wallet"></i>
+                        $ 1,680,000.00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav hidden-m-t">
+            <div class="container">
+                <div class="header-nav">
+                    <div class="header-nav-item header-nav-item-categories active">
+                        <i class="fa-solid fa-bars"></i>Categories
+
+                        <ul class="side-bar__list hidden-m-t">
+                            <li class="side-bar__item ">
+                                <a href="">
+                                    Clothing
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <!-- Side Bar Soft -->
+                                <div class="side-bar__soft--animation side-bar__soft ">
+                                    <ul class="side-bar__soft-list">
+                                        <li class="side-bar__soft-item">
+                                            Spinach
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Celery
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Dry fruits
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Dresses
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Tops
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Shirts & Blouses
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Pants
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Cardigans & Sweaters
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Jackets & Coats
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Blazers & Vests
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Jeans
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Overalls & Jumpsuits
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="side-bar__item ">
+                                <a href="">
+                                    Phone
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <!-- Side Bar Soft -->
+                                <div class="side-bar__soft--animation side-bar__soft ">
+                                    <ul class="side-bar__soft-list">
+                                        <li class="side-bar__soft-item">
+                                            Apple
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Samsung
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Huawei
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Nokia
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Sony
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            LG
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            HTC
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Motorola
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Collection</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Electronics</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Sports & Outdoor</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Jewelry & Watches</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Tools, Industrial</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Automobiles & Motorcycles</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Health,Beauty & Hair</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="">Computers & Office</a>
+                            </li>
+
+                            <li class="side-bar__item">
+                                <a href="" class="">
+                                    Accessories
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <!-- Side Bar Soft -->
+                                <div class="side-bar__soft--animation side-bar__soft ">
+                                    <ul class="side-bar__soft-list">
+                                        <li class="side-bar__soft-item">
+                                            Cucumber
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Cherry tomatoes
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Broccoli
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Artichoke
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Kohlrabi
+                                        </li>
+                                        <li class="side-bar__soft-item">
+                                            Celery
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="./flash-sale.html" class="header-nav-item">
+                        <i class="fa-solid fa-money-bill-wheat"></i>Flash Sale
+                    </a>
+
+                    <a href="./deposit.html" class="header-nav-item">
+                        <i class="fa-solid fa-money-bill-wheat"></i>Deposit
+                    </a>
+
+                    <a href="./transaction.html" class="header-nav-item">
+                        <i class="fa-solid fa-money-bill-transfer"></i>Transaction
+                    </a>
+
+                    <a href="./withdraw.html" class="header-nav-item">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>With draw
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER MOBILE-->
+    <header class="header header-second hide-on-pc d-flex justify-content-between align-items-center">
+        <a href="./navigate-profile.html" class="header-back">
+            <!-- <i class="fa-solid fa-chevron-left"></i> -->
+        </a>
+        <div class="header-title text-center">
+            Transaction
+        </div>
+        <div class=""></div>
+    </header>
+
+    <!-- NAVIGATION MOBILE-->
+    <nav class="navigation-tab hide-on-pc hidden-low-pc">
+        <a href="/" class="navigation-tab-item ">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-house"></i>
+            </span>
+        </a>
+        <a href="./navigate-wallet.html" class="navigation-tab-item">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-wallet"></i>
+            </span>
+        </a>
+        <a href="./navigate-profile.html" class="navigation-tab-item ">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-user"></i>
+            </span>
+        </a>
+        <a href="" class="navigation-tab-item">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-heart"></i>
+            </span>
+        </a>
+        <a href="./transaction.html" class="navigation-tab-item active">
+            <span class="navigation-tab__icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </span>
+        </a>
+    </nav>
+
+    <!-- MAIN -->
+    <div class="main-content container">
+        <div class="row">
+
+            <div class="col-lg-3">
+                <div class="side primary-block ">
+                    <div class="side-infor d-flex align-items-center justify-content-center flex-column">
+                        <img class="avt" src="https://giovannicosmetics.com/wp-content/uploads/2020/04/For-Men.jpg"
+                            alt="">
+
+                        <div class="side-name">
+                            Elon Much <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+
+                    <div class="side-nav">
+                        <a href="./my-profile.html" class="side-nav-item ">
+                            <i class="fa-solid fa-user"></i> My Profile
+                        </a>
+
+                        <a href="./transaction.html" class="side-nav-item active">
+                            <i class="fa-solid fa-money-bill-transfer"></i> Transaction
+                        </a>
+
+                        <a href="./deposit.html" class="side-nav-item">
+                            <i class="fa-solid fa-money-bill-wheat"></i>Deposit
+                        </a>
+
+                        <a href="./withdraw.html" class="side-nav-item">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>With draw
+                        </a>
+
+                        <a href="./transfer.html" class="side-nav-item">
+                            <i class="fa-solid fa-comments-dollar"></i> Transfer
+                        </a>
+
+                        <a href="./my-shop.html" class="side-nav-item">
+                            <i class="fa-solid fa-store"></i> My Shop
+                        </a>
+
+                        <a href="./security.html" class="side-nav-item">
+                            <i class="fa-solid fa-shield-halved"></i> Security
+                        </a>
+
+                        <a href="./purchase-history.html" class="side-nav-item">
+                            <i class="fa-solid fa-book-bookmark"></i> Purchase History
+                        </a>
+                    </div>
+
+                    <div class="log-out">
+                        <a href="./login.html" class="side-nav-item">
+                            <i class="fa-solid fa-right-from-bracket"></i> Log out
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="primary-block">
+                    <div class="header-search transaction-search">
+                        <input type="text" placeholder="Search transaction with ID...">
+                        <div class="header-search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+
+                    <div class="transaction">
+                        <div class="transaction-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Code</th>
+                                        <th>Type</th>
+                                        <th>Amount</th>
+                                        <th>Sender/Receiver</th>
+                                        <th>Status</th>
+                                        <th>Hash</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2022-08-01
+                                            <br>
+                                            04:56
+                                        </td>
+                                        <td>
+                                            D65892435
+                                        </td>
+                                        <td>
+                                            With wallet
+                                        </td>
+                                        <td class="transaction-status transaction-status--Complete">
+                                            20.00 COIN
+                                        </td>
+                                        <td>
+                                            Supoba
+                                        </td>
+                                        <td class="transaction-status transaction-status--Complete">
+                                            Completed
+                                        </td>
+                                        <td>
+                                            hash
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            2022-08-01
+                                            <br>
+                                            04:56
+                                        </td>
+                                        <td>
+                                            D65892435
+                                        </td>
+                                        <td>
+                                            Transfer
+                                        </td>
+                                        <td>
+                                            200.000 COIN
+                                        </td>
+                                        <td>
+                                            Ladybug
+                                        </td>
+                                        <td class="transaction-status transaction-status--pending">
+                                            Pending
+                                        </td>
+                                        <td>
+                                            hash
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            2022-08-01
+                                            <br>
+                                            04:56
+                                        </td>
+                                        <td>
+                                            D65892435
+                                        </td>
+                                        <td>
+                                            With wallet
+                                        </td>
+                                        <td class="transaction-status transaction-status--fail">
+                                            198.00 COIN
+                                        </td>
+                                        <td>
+                                            Supoba
+                                        </td>
+                                        <td class="transaction-status transaction-status--fail">
+                                            Fail
+                                        </td>
+                                        <td>
+                                            hash
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            2022-08-01
+                                            <br>
+                                            04:56
+                                        </td>
+                                        <td>
+                                            D65892435
+                                        </td>
+                                        <td>
+                                            With wallet
+                                        </td>
+                                        <td class="transaction-status transaction-status--Complete">
+                                            20.00 COIN
+                                        </td>
+                                        <td>
+                                            Supoba
+                                        </td>
+                                        <td class="transaction-status transaction-status--Complete">
+                                            Completed
+                                        </td>
+                                        <td>
+                                            hash
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            2022-08-01
+                                            <br>
+                                            04:56
+                                        </td>
+                                        <td>
+                                            D65892435
+                                        </td>
+                                        <td>
+                                            Transfer
+                                        </td>
+                                        <td>
+                                            200.000 COIN
+                                        </td>
+                                        <td>
+                                            Ladybug
+                                        </td>
+                                        <td class="transaction-status transaction-status--pending">
+                                            Pending
+                                        </td>
+                                        <td>
+                                            hash
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            2022-08-01
+                                            <br>
+                                            04:56
+                                        </td>
+                                        <td>
+                                            D65892435
+                                        </td>
+                                        <td>
+                                            With wallet
+                                        </td>
+                                        <td class="transaction-status transaction-status--fail">
+                                            198.00 COIN
+                                        </td>
+                                        <td>
+                                            Supoba
+                                        </td>
+                                        <td class="transaction-status transaction-status--fail">
+                                            Fail
+                                        </td>
+                                        <td>
+                                            hash
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="transaction-pagination">
+                            <div class="transaction-pagination-item active">
+                                1
+                            </div>
+                            <div class="transaction-pagination-item">
+                                2
+                            </div>
+                            <div class="transaction-pagination-item">
+                                3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="./assets/js/clipboard.min.js"></script>
+<script src="./assets/css/bootstrap-5/js/bootstrap.min.js"></script>
+<script src="./assets/css/bootstrap-5/js/bootstrap.bundle.js"></script>
+<script src="./assets/css/bootstrap-5/js/poper.min.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/main.js"></script>
